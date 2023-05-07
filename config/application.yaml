@@ -1,0 +1,18 @@
+server:
+    port: 8080
+
+
+#Mysql Driver
+spring:
+  jpa:
+    database-platform: org.hibernate.dialect.MySQLDialect
+    hibernate:
+      ddl-auto: update
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://10.10.10.31:3306/invoice_db?createDatabaseIfNotExist=true&useSSL=false&allowPublicKeyRetrieval=true
+    username: nimai
+    password: Nimai@123
+    hikari:
+    
+      driver-class-name: com.mysql.cj.jdbc.Driver
